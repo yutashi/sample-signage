@@ -31,12 +31,13 @@ if (env.name !== "production") {
 }
 
 app.on("ready", () => {
-  setApplicationMenu();
+//  setApplicationMenu();
 
   const mainWindow = createWindow("main", {
-    width: 1000,
-    height: 600
+      kiosk: true    
   });
+
+  mainWindow.setMenu(null)
 
   mainWindow.loadURL(
     url.format({
@@ -46,9 +47,9 @@ app.on("ready", () => {
     })
   );
 
-  if (env.name === "development") {
-    mainWindow.openDevTools();
-  }
+//  if (env.name === "development") {
+//    mainWindow.openDevTools();
+//  }
 });
 
 app.on("window-all-closed", () => {
