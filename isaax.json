@@ -1,0 +1,7 @@
+{
+  "name": "signage-sample",
+  "description": "Digital Signage Sample",
+  "scripts": {
+     "start": "npm run start"
+  }
+}
