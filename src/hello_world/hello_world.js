@@ -1,5 +1,5 @@
 export const greet = () => {
-  return "Hello World!";
+  return "Isaax!";
 };
 
 export const bye = () => {
