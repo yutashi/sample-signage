@@ -32,9 +32,15 @@ if (env.name !== "production") {
 
 app.on("ready", () => {
 //  setApplicationMenu();
+  let kiosk = null
+  if (env.name === "development") {
+    kiosk: false
+  } else {
+    kiosk: true
+  }
 
   const mainWindow = createWindow("main", {
-      kiosk: true    
+    kiosk: kiosk   
   });
 
   mainWindow.setMenu(null)
@@ -54,4 +60,4 @@ app.on("ready", () => {
 
 app.on("window-all-closed", () => {
   app.quit();
-});
+})

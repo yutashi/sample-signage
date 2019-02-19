@@ -2,6 +2,6 @@
   "name": "signage-sample",
   "description": "Digital Signage Sample",
   "scripts": {
-     "start": "npm install && npm run start"
+     "start": "npm run start"
   }
 }
