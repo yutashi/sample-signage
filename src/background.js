@@ -34,9 +34,9 @@ app.on("ready", () => {
 //  setApplicationMenu();
   let kiosk = null
   if (env.name === "development") {
-    kiosk: false
+    kiosk = false
   } else {
-    kiosk: true
+    kiosk = true
   }
 
   const mainWindow = createWindow("main", {
